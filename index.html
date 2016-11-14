@@ -1,7 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
 <body>
-<h1>Tabitha Stein's Portfolio</h1>
+
+	<!--Modal for displaying images in greater detail-->
+	<div id="modal">
+
+		<span id="close">x</span> <img id="modalImg" />
+		<div id="caption"></div>
+
+
+	</div>
+
+	<!--Main content-->
+	<div class="center">
+		<h1>Tabitha Stein's Portfolio</h1>
+
+
+		<p>Here are some of my projects. Click on the headers to view
+			source code.</p>
+
+		<ul>
+			<li>
+				<h3>Database Design and Application</h3> Designed and normalized a
+				MySQL database for a mock plant nursery business and built a simple
+				website connecting to it in PHP. Sessions allow customers to login,
+				use a shopping cart, create purchase orders, and view invoices.
+				<div class="imgList">
+					<img src="images/erDiagram.png" alt="ER Diagram" class="zoomImg"
+						onClick="zoom(this)" />
+				</div>
+			</li>
+
+			<li>
+				<h3>Text Compression and Decompression Tool</h3> Java program that
+				losslessly compresses and decompresses text to a compression ratio
+				of ~2.8 using Huffman coding and custom implemented data structures
+				including a hash table with linear probing and an array-based
+				priority queue.
+			</li>
+
+			<li>
+				<h3>
+					<a href="https://github.com/tabiStein/MazeGenerator">Maze
+						Generator and Solver</a>
+				</h3> Interactive Java program with a Swing GUI that builds a maze with
+				user-selected dimensions and algorithms on screen and then solves
+				it, using either Prim's or Kruskal's algorithm to build it, and
+				Depth First or Breadth First search to solve it. Exhibits
+				understanding of data structures and basic graph theory.
+				<div class="imgList">
+					<img src="images/createMazeDialog.png" alt="Create Maze Dialog"
+						class="zoomImg" onClick="zoom(this)" /> <img
+						src="images/creatingMazeKruskal.png"
+						alt="Creating Maze With Kruskal's Algorithm" class="zoomImg"
+						onClick="zoom(this)" /> <img
+						src="images/solvingMazeBreadthFirst.png"
+						alt="Solving Maze With Breadth First Search" class="zoomImg"
+						onClick="zoom(this)" />
+				</div>
+			</li>
+
+			<li>
+				<h3>Private Heap</h3> C program that allocates and manages a block
+				of memory on the heap using custom implemented malloc and free
+				functions. Demonstrates understanding of memory management, pointer
+				manipulation, structs, and designing ADTs in C.
+			</li>
+
+		</ul>
+
+	</div>
+
+	<script src="script.js"></script>
+
 </body>
 </html>
